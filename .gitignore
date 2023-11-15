@@ -1,0 +1,5 @@
+*.rpp-PROX
+*.pkf
+*.reapeaks
+.DS_Store
+*.sadexport
