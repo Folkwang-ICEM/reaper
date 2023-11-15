@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.75/OSX64-clang" 1700046319
+<REAPER_PROJECT 0.1 "6.75/OSX64-clang" 1700054022
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 129
@@ -80,7 +80,7 @@
       30 100 60 10 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
     >
     JS_DIMS 802 585
-    FLOATPOS 0 0 0 0
+    FLOATPOS 32 530 802 613
     FXID {F920C961-4E88-0A47-8336-191F2BB003B2}
     WAK 0 0
   >
@@ -210,7 +210,7 @@
         30 100 60 10 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
       >
       JS_DIMS 985 585
-      FLOATPOS 0 0 0 0
+      FLOATPOS 32 530 985 613
       FXID {AE2FE453-6ABC-1942-9642-9D174DBB9639}
       WAK 0 0
     >
@@ -288,8 +288,8 @@
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
-    VOLPAN 1 1 -1 -1 1
-    MUTESOLO 0 0 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 0 0
@@ -643,7 +643,7 @@
     PLAYOFFS 0 1
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
     SEL 0
     REC 0 0 0 0 0 0 0 0
     VU 2
