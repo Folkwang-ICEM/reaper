@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.75/OSX64-clang" 1700053907
+<REAPER_PROJECT 0.1 "6.75/macOS-arm64" 1700069692
   <NOTES 1 1
     |Sparta Panner geht aus Kanaele 1-16 aber der Master schickt dies aus 5-20, sprich, 
     |nur auf die Kleinen Genelecs
@@ -24,6 +24,7 @@
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  MIDIEDITOR 303427604 0 0
   LOOP 1
   LOOPGRAN 0 4
   RECORD_PATH "./media" ""
@@ -69,7 +70,7 @@
   MASTERPEAKCOL 16576
   MASTERMUTESOLO 0
   MASTERTRACKVIEW 1 0.6667 0.5 0.5 0 -1 0 0 0 0 0 0 0
-  MASTERHWOUT 0 0 1 0 0 0 11264 -1
+  MASTERHWOUT 0 0 1 0 0 0 8196 -1
   MASTER_NCH 22 2
   MASTER_VOLUME 1 0 -1 -1 1
   MASTER_FX 1
@@ -236,9 +237,8 @@
         IExvdWRzcGVha2VyQXppRGVnNjE9IjEwNy45NzM5OTkwMjM0Mzc1IiBMb3Vkc3BlYWtlckVsZXZEZWc2MT0iLTY5LjQ3Mjk5OTU3Mjc1MzkxIiBMb3Vkc3BlYWtlckF6
         aURlZzYyPSItMTE0LjUxODk5NzE5MjM4MjgiIExvdWRzcGVha2VyRWxldkRlZzYyPSItNzUuNTI0MDAyMDc1MTk1MzEiIExvdWRzcGVha2VyQXppRGVnNjM9IjIyLjk4
         OTAwMDMyMDQzNDU3IiBMb3Vkc3BlYWtlckVsZXZEZWc2Mz0iLTkwLjAiIG5Mb3Vkc3BlYWtlcnM9IjE2Ii8+AA==
-        AHN0dWRpbyAxABAAAAA=
+        AAAQAAAA
       >
-      PRESETNAME "studio 1"
       FLOATPOS 0 0 0 0
       FXID {4504F060-B930-0D48-A454-A44170AD4AA9}
       WAK 0 0
@@ -270,7 +270,7 @@
       CHANMODE 0
       GUID {852AC922-BE0E-AC45-BB90-C317812B0B14}
       <SOURCE WAVE
-        FILE "Ambisonic Production Templates/pulse.wav"
+        FILE "./media/pulse.wav"
       >
     >
   >
