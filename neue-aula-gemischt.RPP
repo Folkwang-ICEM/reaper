@@ -1,8 +1,10 @@
-<REAPER_PROJECT 0.1 "7.09/macOS-arm64" 1706259557
+<REAPER_PROJECT 0.1 "7.09/macOS-arm64" 1706693747
   <NOTES 3 3
     |Allows mapping, with faders, of a single stereo file to all Neue Aula speaker pairs, as well as adjustment of speaker group levels in 5th order ambisonics pieces (also ambisonic encoding of stereo files).
     |
     |NB There's a -20db pre-fx volume curve automation on the master bus, so as to start at a suitable level rather than full volume.
+    |
+    |To reset the faders to 0 we need the SWS reaper extensions. Select them all then from the Actions menu select show action list and then Set volume of selected tracks to 0.0 dB. This will probably be in the recent actions list.
   >
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
@@ -15,11 +17,11 @@
   PANLAW 1
   PROJOFFS 0 0 0
   MAXPROJLEN 0 600
-  GRID 3455 8 0.25 8 1 0 0 0
+  GRID 3199 8 0.25 8 1 0 0 0
   TIMEMODE 1 5 -1 30 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 7.2384007481046
+  CURSOR 0
   ZOOM 12.0192295270169 0 0
   VZOOMEX 4 0
   USE_REC_CFG 0
@@ -73,7 +75,7 @@
   MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 -1 0 0 0 0 0 0 0 0
   MASTERHWOUT
   MASTER_NCH 30 2
-  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_VOLUME 1.40209651096979 0 -1 -1 1
   MASTER_FX 1
   MASTER_SEL 0
   <MASTERFXLIST
@@ -165,7 +167,7 @@
       ACT 1 -1
       VIS 1 1 1
       LANEHEIGHT 217 0
-      ARM 1
+      ARM 0
       DEFSHAPE 2 -1 -1
       PT 0 0.1 2
     >
@@ -174,14 +176,6 @@
       SHOW 0
       LASTSEL 0
       DOCKED 0
-      BYPASS 0 0 0
-      <JS analysis/WigMCVUMeter ""
-        30 100 60 10 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      >
-      JS_DIMS 985 585
-      FLOATPOS 32 530 985 613
-      FXID {AE2FE453-6ABC-1942-9642-9D174DBB9639}
-      WAK 0 0
     >
   >
   <TRACK {833BF05B-1BA9-4D43-A942-ED2EEB2F2C8B}
@@ -1172,7 +1166,7 @@
       WAK 0 0
     >
     <ITEM
-      POSITION 0
+      POSITION 1.66400017197807
       SNAPOFFS 0
       LENGTH 539.71301587301582
       LOOP 1
@@ -1243,7 +1237,7 @@
     MIDIOUT -1
     MAINSEND 0 0
     <ITEM
-      POSITION 0
+      POSITION 1.66400017197807
       SNAPOFFS 0
       LENGTH 539.71301587301582
       LOOP 1
@@ -1251,7 +1245,7 @@
       FADEIN 2 0.003 0 2 0 1 1
       FADEOUT 2 0.003 0 2 0 -1 -1
       MUTE 0 0
-      SEL 0
+      SEL 1
       IGUID {42FD314F-EDB2-A849-BAA9-BEC498CCBFC4}
       IID 1
       NAME Klang1982.flac
