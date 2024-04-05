@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "7.09/macOS-arm64" 1706693747
+<REAPER_PROJECT 0.1 "7.09/macOS-arm64" 1712223624
   <NOTES 3 3
     |Allows mapping, with faders, of a single stereo file to all Neue Aula speaker pairs, as well as adjustment of speaker group levels in 5th order ambisonics pieces (also ambisonic encoding of stereo files).
     |
