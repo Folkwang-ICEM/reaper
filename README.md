@@ -1,5 +1,5 @@
 # reaper
-Note that neue-aula-ambi5th-michaels-order-jan24.json uses Michael's speaker
+Note that the neue-aula json presets use Michael's speaker
 ordering (which is close at least to Atmos norms) so hardware outputs need to be
 mapped accordingly. The channels on the left are Michael's channels; those in
 parentheses on the right are the Dante channels for the speakers in the Neue
