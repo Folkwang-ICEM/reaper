@@ -1,40 +1,43 @@
 # reaper
-Note that the neue-aula json presets use Michael's speaker
-ordering (which is close at least to Atmos norms) so hardware outputs need to be
-mapped accordingly. The channels on the left are Michael's channels; those in
-parentheses on the right are the Dante channels for the speakers in the Neue
-Aula. See neue-aula-gemischt.rpp for a master channel that does the mapping.
 
-01: Vida Vorne L         (26)
-02: Vida Vorne R         (27)
-03: Center               (2)
-04: Sub                  (1) 
-05: Vida Hinten L        (29)
-06: Vida Hinten R        (28)
+Note that as of 2.7.24 the channel order is with one exception as proposed by
+Michael (Atmos-approx.) and as used in ICEM's decoder mappings but the
+Beschallung order was completely different. These are now essentially the
+same. So the channels on the left are the correct Dante channels for the
+Beschalling; those in parentheses on the right are the SAD-P Dante input
+channels, for info only, i.e. not to be used by ICEM.
 
-07: Seite Links Vorn     (8)
-08: Seite Rechts Vorn    (14)
-09: Seite Links Hinten   (10)
-10: Seite Rechts Hinten  (16)
-11: Seite Links Mitte    (9)
-12: Seite Rechts Mitte   (15)
+01: Vida Vorne L                (31)
+02: Vida Vorne R                (32)
+03: Center                      (33)
+04: Sub                         (34) 
+05: Vida Hinten L               (35)
+06: Vida Hinten R               (36)
 
-13: Decke Links Vorn     (11)
-14: Decke Rechts Vorn    (17)
-15: Decke Links Hinten   (13)
-16: Decke Rechts Hinten  (19)
-17: Decke Links Mitte    (12)
-18: Decke Rechts Mitte   (18)
+07: Seite Links Vorn            (37)
+08: Seite Rechts Vorn           (38)
+09: Seite Links Hinten          (39)
+10: Seite Rechts Hinten         (40)
+11: Seite Links Mitte           (41)
+12: Seite Rechts Mitte          (42)
 
-19: Hinten L             (20)
-20: Hinten R             (21)
+13: Decke Links Vorn            (43)
+14: Decke Rechts Vorn           (44)
+15: Decke Links Hinten          (45)
+16: Decke Rechts Hinten         (46)
+17: Decke Links Mitte           (47)
+18: Decke Rechts Mitte          (48)
 
-21: Frontfill LL         (3)
-22: Frontfill L          (4)
-23: Frontfill C          (5)
-24: Frontfill R          (6)
-25: Frontfill RR         (7)
-26: Empore LL            (22)
-27: Empore L             (23)
-28: Empore R             (24)
-29: Empore RR            (25)
+19: not in use; was Hinten L    (49)
+20: not in use; was Hinten R    (50)
+21: Hinten Mitte                (51)
+
+22: Frontfill LL                (52)
+23: Frontfill L                 (53)
+24: Frontfill C                 (54)
+25: Frontfill R                 (55)
+26: Frontfill RR                (56)
+27: Empore LL                   (57)
+28: Empore L                    (58)
+29: Empore R                    (59)
+30: Empore RR                   (60)

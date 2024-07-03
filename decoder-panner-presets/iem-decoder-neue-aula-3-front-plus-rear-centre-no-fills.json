@@ -1,6 +1,6 @@
 {
   "Name": "All-Round Ambisonic decoder (AllRAD) and loudspeaker layout",
-  "Description": "This configuration file was created with the IEM AllRADecoder v0.9.2 plug-in. 26 Jun 2024 2:51:51pm",
+  "Description": "This configuration file was created with the IEM AllRADecoder v0.9.4 plug-in. 3 Jul 2024 3:45:17pm",
   "Decoder": {
     "Name": "Decoder",
     "Description": "A 5th order Ambisonics decoder using the AllRAD approach.",
