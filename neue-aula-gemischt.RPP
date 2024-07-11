@@ -1,16 +1,16 @@
-<REAPER_PROJECT 0.1 "7.09/macOS-arm64" 1720700728
+<REAPER_PROJECT 0.1 "7.09/macOS-arm64" 1720701561
   <NOTES 3 3
-    |Allows mapping, with faders, of a single stereo or 5th Order Ambisonics file to all Neue Aula speakers/pairs, as well as adjustment of speaker group levels in 5th order ambisonics pieces (also ambisonic encoding of stereo files).
+    |Allows mapping, with faders, of a single stereo or 5th Order Ambisonics file to all Neue Aula speakers/pairs, adjustment of speaker group levels in 5th order ambisonics pieces, as well as ambisonic encoding of stereo files.
     |
     |Track "5th Order decoder buss" (currently track 12) routes out of the decoder to the speaker groups (tracks 3-11) and from there via the "5th Order Ambisonics" Buss to the speakers. So any Dante->speaker channel mapping is done on the latter ("to speakers": track1) but as of July 2024 this is a direct mapping of 1-30 —> Dante 1-30.
     |
-    |Drop 5th order renders on track "5th Order Datei" (currently track 13) or stereo files for simple stereo encoding onto "stereo->5th order ambisonics" (currently track 14). Replace the test file "Klang" of course.
+    |Place 5th order renders on track "5th Order Datei" (currently track 13) or stereo files for simple stereo encoding onto "stereo->5th order ambisonics" (currently track 14). Replace the test file "Klang" of course.
     |
-    |NB There's a -20db pre-fx volume curve automation on the "to speakers" bus, so as to start at a suitable level rather than full volume.
+    |NB There's a -10db pre-fx volume curve automation on the "to speakers" bus, for headroom. If there's no attenuation on the speakers or SAD-P this should be dropped to e.g. -20db.
     |
-    |The Presonus Faderport is best in "HUI (partial)" mode. See preferences: Control/OSC/Web. Don't forget to set the input and output for both faderport devices, using an offset of 9 for the second.
+    |The Presonus Faderport is best in "HUI (partial)" mode. See preferences: Control/OSC/Web. Don't forget to set the input and output for both faderport devices, using an offset of 9 for the second, i.e. you'll need two HUI devices.
     |
-    |To reset the faders to 0 we need the SWS reaper extensions. Select them all then from the Actions menu select show action list and then Set volume of selected tracks to 0.0 dB. This will probably be in the recent actions list and on the ICEM Lema it's currently mapped to Option-0.
+    |To reset the faders to 0 we need the SWS reaper extensions. Select all tracks then from the Actions menu select "show action list" and then "Set volume of selected tracks to 0.0 dB". This will probably be in the recent actions list and on the ICEM Lema it's currently mapped to Option-0.
   >
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
@@ -79,7 +79,7 @@
   MASTERPEAKCOL 16576
   MASTERMUTESOLO 0
   MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 -1 0 0 0 0 0 0 0 0
-  MASTERHWOUT 0 0 1 0 0 0 15360 -1
+  MASTERHWOUT
   MASTER_NCH 30 2
   MASTER_VOLUME 1 0 -1 -1 1
   MASTER_FX 1
@@ -89,14 +89,6 @@
     SHOW 0
     LASTSEL 0
     DOCKED 0
-    BYPASS 0 0 0
-    <JS analysis/WigMCVUMeter ""
-      30 100 60 10 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    >
-    JS_DIMS 802 585
-    FLOATPOS 32 530 802 613
-    FXID {F920C961-4E88-0A47-8336-191F2BB003B2}
-    WAK 0 0
   >
   <MASTERPLAYSPEEDENV
     EGUID {9C7ACF00-9018-154E-9E12-C4010681D445}
@@ -128,7 +120,7 @@
     ISBUS 1 1
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
-    SEL 0
+    SEL 1
     REC 0 0 0 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 0 0 0
@@ -137,29 +129,31 @@
     FX 1
     TRACKID {94011E7C-71EE-CE4A-96DA-22A43D20C986}
     PERF 0
-    AUXRECV 27 0 1 0 1 0 0 1024 1045 -1:U 0 -1 ''
-    AUXRECV 27 0 1 0 1 0 0 1025 1049 -1:U 0 -1 ''
-    AUXRECV 28 0 1 0 1 0 0 1024 1046 -1:U 0 -1 ''
-    AUXRECV 28 0 1 0 1 0 0 1025 1048 -1:U 0 -1 ''
-    AUXRECV 30 0 1 0 1 0 0 1024 1050 -1:U 0 -1 ''
-    AUXRECV 30 0 1 0 1 0 0 1025 1053 -1:U 0 -1 ''
-    AUXRECV 31 0 1 0 1 0 0 0 27 -1:U 0 -1 ''
     MIDIOUT -1
-    MAINSEND 1 0
+    MAINSEND 0 0
+    HWOUT 0 0 1 0 0 0 15360 -1:U -1
     <VOLENV
       EGUID {88A00103-C657-0449-B666-0C00EBF405D1}
       ACT 1 -1
-      VIS 0 1 1
-      LANEHEIGHT 0 0
+      VIS 1 1 1
+      LANEHEIGHT 71 0
       ARM 0
       DEFSHAPE 2 -1 -1
-      PT 0 0.1 2
+      PT 0 0.31 2
     >
     <FXCHAIN
       WNDRECT 523 342 805 508
       SHOW 0
       LASTSEL 0
       DOCKED 0
+      BYPASS 0 0 0
+      <JS analysis/WigMCVUMeter ""
+        30 100 60 10 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      JS_DIMS 802 585
+      FLOATPOS 32 1022 802 613
+      FXID {32A90519-AF1F-BF48-A80D-ABB76AB7229C}
+      WAK 0 0
     >
   >
   <TRACK {833BF05B-1BA9-4D43-A942-ED2EEB2F2C8B}
@@ -212,6 +206,7 @@
     AUXRECV 11 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
     MIDIOUT -1
     MAINSEND 1 0
+    MAINSEND_NCH 2
   >
   <TRACK {88FFE9B5-A169-5940-8C55-FEE09888C177}
     NAME "Vorne Centre"
@@ -319,6 +314,7 @@
     AUXRECV 11 0 1 0 0 0 0 3078 0 -1:U 0 -1 ''
     MIDIOUT -1
     MAINSEND 1 6
+    MAINSEND_NCH 6
   >
   <TRACK {0E6312FD-5CE5-F64C-B60A-D704E8E41FD1}
     NAME Decke
@@ -345,6 +341,7 @@
     AUXRECV 11 0 1 0 0 0 0 3084 0 -1:U 0 -1 ''
     MIDIOUT -1
     MAINSEND 1 12
+    MAINSEND_NCH 6
   >
   <TRACK {8B982F72-D112-4E46-B70E-C82BA0BDB5DF}
     NAME "Hinten Mitte"
@@ -425,6 +422,7 @@
     AUXRECV 11 0 1 0 0 0 0 2074 0 -1:U 0 -1 ''
     MIDIOUT -1
     MAINSEND 1 26
+    MAINSEND_NCH 4
   >
   <TRACK {04EDB245-0295-4346-9786-0FA56A14F3A7}
     NAME "5th order decoder buss "
@@ -1526,7 +1524,7 @@
     ISBUS 0 0
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 -1 0
-    SEL 1
+    SEL 0
     REC 0 0 0 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 -1 0 0
