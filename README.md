@@ -58,7 +58,7 @@ Note also two more things:
 
 1) the channel numbers out of the atmos-like decoders are simply consecutive,
 i.e. they skip the LFE channel 4 (so you don't render unnecessary silent
-channels). So take care of mapping to the actual speakers being used, e.g. with
+channels). Take care of mapping to the actual speakers being used, e.g. with
 four tops in e.g. 7.4, the middle top pair of the Neue Aula is not used; for the
 sides in 7.4, the front side pair is not used; for the sides in 9.4, the middle
 side pair is not used. All of this could be reconfigured of course, by making a
