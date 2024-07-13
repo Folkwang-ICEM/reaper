@@ -10,7 +10,7 @@ essentially that which I proposed in order to be approximately Atmos-ready
 channels to route for the *Beschallung* team; those in parentheses on the right
 are the SAD-P Dante input channels, for info only, i.e. not to be used by ICEM.
 
-01: Vida Vorne L                (31)
+01: Vida Vorne L                (31)  
 02: Vida Vorne R                (32)
 03: Center                      (33)
 04: Sub                         (34) 
