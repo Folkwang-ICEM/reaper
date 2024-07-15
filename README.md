@@ -47,26 +47,27 @@ are the SAD-P Dante input channels, for info only, i.e. not to be used by ICEM.
 
 # atmos-like decoder presets
 
-The Neue Aula atmos-like presets (e.g. iem-decoder-neue-aula-7.4.json) are
+The Neue Aula Atmos-like presets (e.g. iem-decoder-neue-aula-7.4.json) are
 offered merely for rendering a lower channel-count file from an Ambisonics
 project so that, for example, you can play out of software such as QLab (which
 is currently limited to 24 audio channels maximum). These decoders use the Neue
-Aula loudspeaker positions too, so should not be used for an actual Atmos file
-render, as they use different loudspeaker positions.
+Aula loudspeaker positions so should not be used for an actual Atmos file
+render, as Atmos uses different loudspeaker positions.
 
 Note also two more things:
 
-1) the channel numbers out of the atmos-like decoders are simply consecutive,
-i.e. they skip the LFE channel 4 (so you don't render unnecessary silent
-channels). Take care of mapping to the actual speakers being used, e.g. with
-four tops in e.g. 7.4, the middle top pair of the Neue Aula is not used; for the
+1) the channel numbers out of the Atmos-like decoders are simply consecutive,
+i.e. they skip the LFE channel 4 so that you don't render unnecessary silent
+channels. Take care of mapping to the actual speakers being used, e.g. with four
+tops in e.g. 7.4, the middle top pair of the Neue Aula is not used; for the
 sides in 7.4, the front side pair is not used; for the sides in 9.4, the middle
 side pair is not used. All of this could be reconfigured of course, by making a
-new decoder, deleting speakers from
+new decoder and deleting speakers from
 e.g. iem-decoder-neue-aula-3-front-plus-rear-centre-no-fills.json.
 
-2) as the LFE channel is skipped in the atmos-like decoders, you'll need to use
-e.g. SAD-P/Reaper/a mixing desk to make a send for the LFE on channel 4.
+2) as the LFE channel is skipped in the Atmos-like decoders, you'll need to use
+e.g. SAD-P/Reaper/a mixing desk in order to make a send for the LFE on channel
+4.
 
 Michael Edwards, July 13th 2024
 
