@@ -4,6 +4,9 @@ All decoder presets use the loudspeaker positions of the Neue Aula and ICEM's
 studios. For software that can calculate angles for these from distances, see
 ambi-speakers.lsp in the Lisp repository.
 
+For concerts in the Neue Aula (from 14/11/2024) the default deocder should be
+iem-decoder-neue-aula-5-front-plus-rear-centre-with-fills.json
+
 Note that as of 2.7.24 the channel order for Folkwang's *Beschallung* team is
 essentially that which I proposed in order to be approximately Atmos-ready
 (thanks Charles). The channels on the left, below, are the correct Dante
@@ -12,7 +15,7 @@ are the SAD-P Dante input channels, for info only, i.e. not to be used by ICEM.
 
 01: Vida Vorne L                (31)  
 02: Vida Vorne R                (32)  
-03: Center                      (33)  
+03: Centre                      (33)  
 04: Sub                         (34)   
 05: Vida Hinten L               (35)  
 06: Vida Hinten R               (36)  
@@ -31,8 +34,8 @@ are the SAD-P Dante input channels, for info only, i.e. not to be used by ICEM.
 17: Decke Links Mitte           (47)  
 18: Decke Rechts Mitte          (48)  
 
-19: not in use; was Hinten L    (49)  
-20: not in use; was Hinten R    (50)  
+19: Centre Links                (49)  
+20: Centre Rechts               (50)  
 21: Hinten Mitte                (51)  
 
 22: Frontfill LL                (52)  
@@ -70,4 +73,6 @@ e.g. SAD-P/Reaper/a mixing desk in order to make a send for the LFE on channel
 4.
 
 Michael Edwards, July 13th 2024
+Updated November 14th 2024 to reflect the two new speakers at the front
+(Centre Left and Centre Right)
 
