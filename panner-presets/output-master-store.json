@@ -1,0 +1,33 @@
+{
+	"pattrstorage" : 	{
+		"name" : "output-master-store",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"lfe-exclusive" : [ 0 ],
+					"master-xover-freq" : [ 90.0 ],
+					"out-gain-master" : [ 0.0 ],
+					"out-lfe-gain-master" : [ 0.0 ],
+					"use-lfe" : [ 1 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"lfe-exclusive" : [ 0 ],
+					"master-xover-freq" : [ 80.0 ],
+					"out-gain-master" : [ 0.0 ],
+					"out-lfe-gain-master" : [ 0.0 ],
+					"use-lfe" : [ 0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -76,3 +76,13 @@ Michael Edwards, July 13th 2024
 Updated November 14th 2024 to reflect the two new speakers at the front
 (Centre Left and Centre Right)
 
+## Generic decoder presets
+
+The sub-directory `generic/` in the `decoder-panner-presets` collection contains
+decoder presets modeled after the speaker setup guides provided by Dolby
+(https://www.dolby.com/about/support/guide/speaker-setup-guides/).  As the
+aforementioned presets, they are aimed at working with Ambisonics-mixes in a
+context which requires audio rendered to discrete channels (e.g. when creating
+an Atmos-bed from an HOA file). 
+
+Ruben Philipp, October 10th 2024
