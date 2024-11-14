@@ -46,7 +46,12 @@ are the SAD-P Dante input channels, for info only, i.e. not to be used by ICEM.
 27: Empore LL                   (57)  
 28: Empore L                    (58)  
 29: Empore R                    (59)  
-30: Empore RR                   (60)  
+30: Empore RR                   (60)
+
+If you want to test the Neue Aula speaker channels, you can use the following
+reaper file from this repository: ambi5th-speaker-routing-spoken.RPP The
+required sound files are at
+https://icem.folkwang-uni.de/~mde/neue-aula-spoken.zip
 
 # atmos-like decoder presets
 
