@@ -1,0 +1,96 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17460\viewh12660\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 Vorlagen Studio 1\
+\
+
+\f1\b0\fs24 Diese Vorlagen sind so konzipiert das alle Vorverst\'e4rker Outputs in das RME Digiface landen, zum Teil in die Eing\'e4nge des MacPro (Dante Virtual Soundcard), und das die Ausg\'e4nge 1-22 des RME Digiface \'fcber das Monitor Controller in die Lautsprecher gehen.\
+\
+In den Meisten F\'e4lle muss mann also nichts im Totalmix oder Dante Controller einstellen.\
+\
+Einzige Ausnahme Monitoring \'fcber Kopfh\'f6rer. Ich arbeite noch an eine L\'f6sung.
+\f0\b\fs28 \
+\
+\
+WICHTIG: REDNET VORVERST\'c4RKER NICHT INS ANDIAMO ROUTEN IM DANTE CONTROLLER!! FEEDBACK GEFAHR!!\
+\
+ANDIAMO IST \ul NICHT\ulnone  DAS AUDIO INTERFACE! SONDERN DAS RME DIGIFACE DANTE!\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b0\fs24 \cf0 \ul \ulc0 - Dante Controller Preset:\ulnone \
+\
+
+\f0\b Audio216 Preamps Kan\'e4le 1-16 gehen ins Andiamo und landen in Kan\'e4le 1-16 der RME DigifaceDANTE!\
+\
+REDNET Kan\'e4le 1-8 landen in Kan\'e4le 33-40 der RME DigifaceDANTE!
+\f1\b0 \
+\
+
+\f0\b 1. 
+\f1\b0 DanteControllerPreset Studio 1\
+	ANDIAMO TRANSMITTER (OUT) 1 - 32 \'97> DIGIFACE RECEIVER (IN) 1 - 32\
+	REDNET MP8R TRANSMITTER (OUT) 1 - 8 \'97> DIGIFACE RECEIVER (IN) 33 - 40\
+\
+	DIGIFACE TRANSMITTER (OUT) 1 - 24 \'97> RTW TC5 RECEIVER (IN) 1 - 24\
+	DIGIFACE TRANSMITTER (OUT) 25 - 33 \'97> ANDIAMO RECEIVER (IN) 25 - 33\
+\
+	RTW TC5 TRANSMITTER (OUT) 1 - 24 \'97> ANDIAMO RECEIVER (IN) 1 - 24\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 2
+\f1\b0 . DanteControllerPreset Studio 1 plus MacPro (Audio216 Preamps und REDNET gehen ins DigifaceDANTE UND MacPro DVS Parallel, Ausg\'e4nge 1-22 DVS gehen ins RME Digiface und \'fcber Totalmix in die Lautsprecher)\
+	ANDIAMO TRANSMITTER (OUT) 1 - 32 \'97> DIGIFACE RECEIVER (IN) 1 - 32\
+	REDNET MP8R TRANSMITTER (OUT) 1 - 8 \'97> DIGIFACE RECEIVER (IN) 33 - 40\
+\
+	ANDIAMO TRANSMITTER (OUT) 1 - 32 \'97> MACPRO (DVS) RECEIVER (IN) 1 - 24\
+	REDNET MP8R TRANSMITTER (OUT) 1 - 8 \'97> MACPRO (DVS) RECEIVER (IN) 25 - 32\
+\
+	MACPRO (DVS) TRANSMITTER (OUT) 1 -24 \'97> DIGIFACE RECEIVER (IN) 41 - 64\
+\
+	DIGIFACE TRANSMITTER (OUT) 1 - 24 \'97> RTW TC5 RECEIVER (IN) 1 - 24\
+	DIGIFACE TRANSMITTER (OUT) 25 - 33 \'97> ANDIAMO RECEIVER (IN) 25 - 33\
+\
+	RTW TC5 TRANSMITTER (OUT) 1 - 24 \'97> ANDIAMO RECEIVER (IN) 1 - 24\
+\
+	
+\f0\b\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+
+\f1\b0\fs24 \ul - TotalMix Workspace:\
+\ulnone \
+Hat 4 Snapshots\
+\
+
+\f0\b 1.
+\f1\b0  S1 Reset  (Standard Einstellung)\
+	Mono Kan\'e4le\
+	Keine Input Routing in Output B\'fcsse\
+	Software Playback Kan\'e4le1-64 eins-zu-eins in Outputs 1-64\
+	Alle Software Playback Kan\'e4le gehen in die Phones Output (ungerade Links, Gerade Rechts)\
+\
+
+\f0\b 2.
+\f1\b0  S1 Ext ab 41 (f\'fcr die Nutzung von Dante Virtual Soundcard ohne Routen zu m\'fcssen, zb MacPro)\
+	Wie Snapshot No. 1. zus\'e4tzlich: Inputs 41-62 gehen direkt in die Outputs 1-22. So kann mann die Ausg\'e4nge 1-22 vom DVS in die Lautsprecher schicken (1-22). Beachten: Im Dante Controller muss die Vorlage \'92DanteControllerPreset Studio 1 plus MacPro\'92 melden werden.\
+\
+
+\f0\b 3.
+\f1\b0  S1 Reset St\
+	Wie Snapshot No. 1 aber mit Stereo Kan\'e4le\
+\
+
+\f0\b 8.
+\f1\b0  S1 Backup \
+	eine Kopie von Snapshot No.1 falls es aus versehen \'fcberschrieben wird.\
+\
+\
+}
