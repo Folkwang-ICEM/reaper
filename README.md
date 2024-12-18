@@ -53,6 +53,9 @@ reaper file from this repository: ambi5th-speaker-routing-spoken.RPP The
 required sound files are at
 https://icem.folkwang-uni.de/~mde/neue-aula-spoken.zip
 
+# AED format for left-inlet of ICST's ambimonitor max external
+aed 1 -39.094 18.755 1.0, aed 2 39.094 18.755 1.0, aed 3 -0.000 26.565 1.0, aed 5 -153.435 6.954 1.0, aed 6 -206.565 6.954 1.0, aed 7 -63.435 29.206 1.0, aed 8 63.435 29.206 1.0, aed 9 -116.565 29.206 1.0, aed 10 -243.435 29.206 1.0, aed 11 -90.000 32.005 1.0, aed 12 90.000 32.005 1.0, aed 13 -36.870 57.995 1.0, aed 14 36.870 57.995 1.0, aed 15 -143.130 57.995 1.0, aed 16 -216.870 57.995 1.0, aed 17 -90.000 69.444 1.0, aed 18 90.000 69.444 1.0, aed 19 -20.0 25.0 1.0, aed 20 20 25 1.0, aed 21 180.0 17.853 1.0, aed 22 -32.735 -3.438 1.0, aed 23 -17.819 -3.89 1.0,aed 24 0.0 -3.89 1, aed 25 17.819 -3.890 1.0, aed 26 32.735 -3.438 1.0, aed 27 -143.973 22.017 1.0, aed 28 -160.017 25.169 1.0, aed 29 160.017 25.269 1.0, aed 30 143.973 22.017 1.0
+
 # atmos-like decoder presets
 
 The Neue Aula Atmos-like presets (e.g. iem-decoder-neue-aula-7.4.json) are
