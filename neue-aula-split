@@ -5,6 +5,12 @@
 
 # wenn Skript im .wav Verzeichniss ist dann: cd "$(dirname "$0")"
 
+if ! [ -x "$(command -v sox)" ]; then
+    echo "This script needs sox. "
+    echo "Try 'brew install sox' on MacOS or 'apt-get install sox' on Linux"
+    exit
+fi
+
 if [ $# -eq 0 ]
   then
       echo "This script needs 1 argument: the path to the 30-channel .wav file"
