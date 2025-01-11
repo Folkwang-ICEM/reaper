@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# braucht sox. Skript-Argument is die 30-Kanaelige .wav Datei
+# NB Kanal 4 bleibt leer, ausser man hat etwas auf den Sub explizit getan
+
+# wenn Skript im .wav Verzeichniss ist dann: cd "$(dirname "$0")"
+
+# neuer Name basiert auf Argument 1
+out="${1%.wav}-channels-25-30.wav"
+echo writing channels 25-30 to $out
+
+sox "$1" "$out" remix 25 26 27 28 29 30
