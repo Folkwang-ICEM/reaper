@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+/// File:             mc.conenh.eel (eel2 programming language for reaper)
+///
+/// Project:          contrast enhancement for reaper multichannel tracks. Taken
+//                    from Bill Schottstaedt's CLM, he describes the process as
+//                    follows: "contrast-enhancement phase-modulates a sound
+//                    file. It's like audio MSG. The result is to brighten the
+//                    sound, helping it cut through a huge mix."
+//
+//                    NB input will be amplified even when CE amount = 0.0
+///
+/// Author:           Michael Edwards: m@michael-edwards.org
+///
+/// Creation date:    january 31st 2025
+///
+/// $$ Last modified:  11:05:13 Sat Feb  1 2025 CET
+///
+////////////////////////////////////////////////////////////////////////////////
+
+desc:mde contrast enhancement multichannel (from Bill Schottstaedt)
+
+slider1:0.3<0.0,1.0,0.01>amount
+
+@init
+numChannels = get_host_numchan();
+halfpi = $pi / 2.0;                 // c. 1.5707963268; 
+twopi = $pi * 2.0;                  // c. 6.28318530718;
+
+@slider
+// todo: update the 'amount' on-the-fly so we can hear changes as reaper plays
+
+@sample
+i = 0;
+while (i < numChannels) (
+      // for stereo we'd use the reaper-established globals spl0 and spl1 but as
+      // we support here any number of channels, we have to use the more general
+      // (and apparently slower) spl() function.
+      sampin = spl(i);
+      spl(i) = sin((sampin * halfpi) + (amount * sin(sampin * twopi)));
+      i += 1; // i++ doesn't seem to be part of the language.
+);
+
+////////////////////////////////////////////////////////////////////////////////
+// EOF
