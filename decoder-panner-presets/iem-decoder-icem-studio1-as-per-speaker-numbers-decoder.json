@@ -640,8 +640,8 @@
     "Name": "A loudspeaker layout",
     "Loudspeakers": [
       {
-        "Azimuth": 0.0,
-        "Elevation": 24.8799991607666,
+        "Azimuth": 0.000,
+        "Elevation": 19.327,
         "Radius": 1.0,
         "IsImaginary": false,
         "Channel": 5,
