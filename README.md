@@ -80,9 +80,57 @@ e.g. iem-decoder-neue-aula-3-front-plus-rear-centre-no-fills.json.
 e.g. SAD-P/Reaper/a mixing desk in order to make a send for the LFE on channel
 4.
 
+# studio 1 reaSurroundPan coordinates
+These are also presented in a near-atmos channel
+order. reaSurroundPanPresets.RPL now includes '1 in to studio 1' where instead
+of the ring-like channel order surround/atmos order is used for the ease of
+mapping such sound files directly to the studio 1 speakers. This means that
+plugin-pins handle the mapping of surround/atmos channel numbers to studio 1
+speaker channel numbers.
+
+plugin channel.surround/atmos label = studio 1 channel
+1. L = 13
+2. R = 14
+3. C = 5
+4. (LFE = 21)
+5. Ls = 18
+6. Rs = 17
+7. L side = 19
+8. R side = 16
+9. Top L = 9
+10. Top R = 10
+11. Top Ls = 12
+12. Top Rs = 11
+13. Top L mid = 8
+14. Top R mid = 6
+15. L wide = 20
+16. R wide = 15
+17. top rear centre = 7
+
+Actual speaker channels and XYZ coordinates
+Out_013 << (-47,95,0) 
+Out_014 << (47,95,0) 
+Out_015 << (97,40,0) 
+Out_016 << (97,-40,0) 
+Out_017 << (40,-97,0) 
+Out_018 << (-40,-97,0) 
+Out_019 << (-97,-40,0) 
+Out_020 << (-97,40,0) 
+Out_005 << (0,100,72) 
+Out_006 << (100,0,72) 
+Out_007 << (0,-100,72) 
+Out_008 << (-100,0,72) 
+Out_009 << (-42,42,100) 
+Out_010 << (44,42,100) 
+Out_011 << (44,-42,100) 
+Out_012 << (-44,-42,100) 
+
+
 Michael Edwards, July 13th 2024
 Updated November 14th 2024 to reflect the two new speakers at the front
 (Centre Left and Centre Right)
+Updated May 3rd 2026 to reflect new studio 1 measurements and the reaSurroundPan
+coordinates 
 
 ## Generic decoder presets
 
