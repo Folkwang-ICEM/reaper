@@ -88,43 +88,24 @@ mapping such sound files directly to the studio 1 speakers. This means that
 plugin-pins handle the mapping of surround/atmos channel numbers to studio 1
 speaker channel numbers.
 
-plugin channel.surround/atmos label = studio 1 channel
-1. L = 13
-2. R = 14
-3. C = 5
+plugin channel.surround/atmos label = studio 1 channel (xyz coordinates)
+1. L = 13 (-47,95,0) 
+2. R = 14 (47,95,0) 
+3. C = 5 (0,100,72) 
 4. (LFE = 21)
-5. Ls = 18
-6. Rs = 17
-7. L side = 19
-8. R side = 16
-9. Top L = 9
-10. Top R = 10
-11. Top Ls = 12
-12. Top Rs = 11
-13. Top L mid = 8
-14. Top R mid = 6
-15. L wide = 20
-16. R wide = 15
-17. top rear centre = 7
-
-Actual speaker channels and XYZ coordinates
-Out_013 << (-47,95,0) 
-Out_014 << (47,95,0) 
-Out_015 << (97,40,0) 
-Out_016 << (97,-40,0) 
-Out_017 << (40,-97,0) 
-Out_018 << (-40,-97,0) 
-Out_019 << (-97,-40,0) 
-Out_020 << (-97,40,0) 
-Out_005 << (0,100,72) 
-Out_006 << (100,0,72) 
-Out_007 << (0,-100,72) 
-Out_008 << (-100,0,72) 
-Out_009 << (-42,42,100) 
-Out_010 << (44,42,100) 
-Out_011 << (44,-42,100) 
-Out_012 << (-44,-42,100) 
-
+5. Ls = 18 (-40,-97,0) 
+6. Rs = 17 (40,-97,0) 
+7. L side = 19 (-97,-40,0) 
+8. R side = 16 (97,-40,0) 
+9. Top L = 9 (-42,42,100) 
+10. Top R = 10 (44,42,100) 
+11. Top Ls = 12 (-44,-42,100) 
+12. Top Rs = 11 (44,-42,100) 
+13. Top L mid = 8 (-100,0,72) 
+14. Top R mid = 6 (100,0,72) 
+15. L wide = 20 (-97,40,0) 
+16. R wide = 15 (97,40,0) 
+17. top rear centre = 7 (0,-100,72) 
 
 Michael Edwards, July 13th 2024
 Updated November 14th 2024 to reflect the two new speakers at the front
